@@ -42,7 +42,7 @@ def update_graph(region):
 
 app.layout = html.Div(
     [
-        html.H1(children="Pink Morsel Sales"),
+        html.H1(children="Pink Morsel Sales", id='header'),
 
         dcc.Graph(id='morsel-graph', figure=generate_figure(data)),
 
